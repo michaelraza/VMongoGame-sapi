@@ -34,6 +34,6 @@ payload]]></ee:set-payload>
 	<flow name="POST-sapi-mongodatabaseFlow" doc:id="22003811-42b3-4909-860a-9e698bbe80eb" >
 		<logger level="INFO" doc:name="Logger" doc:id="4734ac77-6472-4ec3-ba0b-7a6560e9ecbe" />
 		<mongo:insert-document doc:name="Insert Games to MongoDB" doc:id="69dabc58-21ed-4255-92ff-2cba274ead1a" collectionName="Games" config-ref="MongoDB_Config" />
-		<logger level="INFO" doc:name="After For Each" doc:id="3cd9cb85-91f6-45a5-b2f5-044b233e45e2" />
+		<logger level="INFO" doc:name="After For Each" doc:id="3cd9cb85-91f6-45a5-b2f5-044b233e45e2" message="#[payload]"/>
 	</flow>
 </mule>
