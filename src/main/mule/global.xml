@@ -23,7 +23,7 @@ http://www.mulesoft.org/schema/mule/secure-properties http://www.mulesoft.org/sc
 	<http:request-config name="Request_ratings" doc:name="HTTP Request configuration" doc:id="c8617c7c-f364-4f43-ae73-87def1452c20" >
 		<http:request-connection host="${ReqRat.host}" port="${ReqRat.port}" />
 	</http:request-config>
-	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="4d00b379-e643-4655-848e-9d7a036f79c3" file="${env}.secure.properties" key="${secure.key}" >
+	<secure-properties:config name="Secure_Properties_Config" doc:name="Secure Properties Config" doc:id="4d00b379-e643-4655-848e-9d7a036f79c3" file="${env}.secure.properties" key="MyMulesoftKey" >
 		<secure-properties:encrypt algorithm="Blowfish" />
 	</secure-properties:config>
 </mule>
