@@ -12,7 +12,8 @@ http://www.mulesoft.org/schema/mule/mongo http://www.mulesoft.org/schema/mule/mo
 			<mongo:query ><![CDATA[#[output application/json
 ---
 {
-	("date_released" : {"\$gt" :attributes.queryParams.date}) if (!isEmpty(attributes.queryParams.date)),
+	("date_released" : {"\$gt" :attributes.queryParams.date}) if (!isEmpty(attributes.queryParams.date) and attributes.queryParams.time =="after"),
+	("date_released" : {"\$lt" :attributes.queryParams.date}) if (!isEmpty(attributes.queryParams.date) and attributes.queryParams.time =="before"),
 	 ("stores" : attributes.queryParams.store) if (!isEmpty(attributes.queryParams.store)),
     ("genres" : attributes.queryParams.genre) if (!isEmpty(attributes.queryParams.genre)),
     ("platforms" : attributes.queryParams.platform) if (!isEmpty(attributes.queryParams.platform)),
