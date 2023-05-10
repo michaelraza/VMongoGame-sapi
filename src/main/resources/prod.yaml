@@ -1,16 +1,4 @@
-listener:
+http:
   host: "0.0.0.0"
   port: ""
 
-request:
-  host: "api.rawg.io"
-  path: "/api"
-  port: ""
-  
-ReqDate:
-  host: "0.0.0.0"
-  port: ""
-  
-ReqRat:
-  host: "0.0.0.0"
-  port: ""
