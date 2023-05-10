@@ -94,7 +94,8 @@ output application/json
         </error-handler>
     </flow>
     <flow name="get:\games:videos_games-sys-config">
-        <flow-ref doc:name="Go to Get\games" doc:id="cf8dbe31-af56-4095-a610-d2275b77770d" name="GET-sapi-mongodatabaseFlow1" />
+        <logger level="INFO" doc:name="Logger" doc:id="5fea7f24-5525-4c4a-9f15-23a34e57e20a" />
+		<flow-ref doc:name="Go to Get\games" doc:id="cf8dbe31-af56-4095-a610-d2275b77770d" name="GET-sapi-mongodatabaseFlow1" />
     </flow>
     <flow name="post:\games:videos_games-sys-config">
         <flow-ref doc:name="Go to \Post Games" doc:id="647c8a95-5bbe-4a1c-aadb-7cbb89aa4cad" name="POST-sapi-mongodatabaseFlow" />
