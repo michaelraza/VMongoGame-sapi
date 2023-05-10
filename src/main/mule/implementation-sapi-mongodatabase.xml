@@ -19,6 +19,7 @@ http://www.mulesoft.org/schema/mule/mongo http://www.mulesoft.org/schema/mule/mo
     ("released" : attributes.queryParams.released) if (!isEmpty(attributes.queryParams.released) )
 }]]]></mongo:query>
 		</mongo:find-documents>
+		<logger level="INFO" doc:name="Logger" doc:id="cd4f74d6-09b7-40ff-9376-06a46554c751" message="#[payload]"/>
 		<ee:transform doc:name="Show Payload" doc:id="31ed666a-4184-4ddc-b92a-1979412021e3">
 			<ee:message>
 				<ee:set-payload><![CDATA[%dw 2.0
