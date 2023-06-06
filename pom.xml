@@ -40,7 +40,6 @@
 						<workerType>Micro</workerType>
 						<workers>1</workers>
 						<objectStoreV2>true</objectStoreV2>
-					
 					</cloudHubDeployment>
 					<sharedLibraries>
 						<sharedLibrary>
@@ -79,15 +78,15 @@
 			<version>4.0.4</version>
 		</dependency>
 		<dependency>
-			<groupId>org.mule.modules</groupId>
-			<artifactId>mule-apikit-module</artifactId>
-			<version>1.8.1</version>
-			<classifier>mule-plugin</classifier>
-		</dependency>
-		<dependency>
 			<groupId>com.mulesoft.modules</groupId>
 			<artifactId>mule-secure-configuration-property-module</artifactId>
 			<version>1.2.5</version>
+			<classifier>mule-plugin</classifier>
+		</dependency>
+		<dependency>
+			<groupId>org.mule.modules</groupId>
+			<artifactId>mule-apikit-module</artifactId>
+			<version>1.9.0</version>
 			<classifier>mule-plugin</classifier>
 		</dependency>
 	</dependencies>
